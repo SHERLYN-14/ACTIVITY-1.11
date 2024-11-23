@@ -13,7 +13,7 @@ const fontLoader = new FontLoader()
 const scene = new three.Scene()
 
 const textureLoader = new three.TextureLoader()
-const matcapTexture = textureLoader.load('textures/matcaps/5.png')
+const matcapTexture = textureLoader.load('textures\matcaps\5.png')
 
 const sizes = 
 {
@@ -21,7 +21,7 @@ const sizes =
   height: window.innerHeight
 }
 
-fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) =>
+fontLoader.load('fonts\helvetiker_regular.typeface.json', (font) =>
 {
   const mat = new three.MeshMatcapMaterial({matcap: matcapTexture})
 
