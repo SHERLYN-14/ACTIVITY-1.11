@@ -13,7 +13,7 @@ const scene = new THREE.Scene();
 
 // Texture
 const textureLoader = new THREE.TextureLoader();
-const matcapTexture = textureLoader.load('textures/matcaps/5.png');
+const matcapTexture = textureLoader.load('textures\matcaps\5.png');
 
 // Sizes
 const sizes = {
@@ -23,7 +23,7 @@ const sizes = {
 
 // Font Loader
 const fontLoader = new FontLoader();
-fontLoader.load('fonts/helvetiker_regular.typeface.json', (font) => {
+fontLoader.load('fonts\helvetiker_regular.typeface.json', (font) => {
   const mat = new THREE.MeshMatcapMaterial({ matcap: matcapTexture });
 
   // Text Geometry
